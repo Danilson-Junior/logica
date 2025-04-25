@@ -1,3 +1,18 @@
+/**
+ * 🧠 Exercício 11 – Verificar se uma palavra é um palíndromo
+ * 
+ * Descrição:
+ * Crie uma função que recebe uma string e retorna `true` se ela for um palíndromo
+ * (ou seja, se ela pode ser lida da mesma forma de trás para frente), e `false` caso contrário.
+ * 
+ * Exemplos:
+ * - "radar" -> true
+ * - "abcba" -> true
+ * - "hello" -> false
+ * - "aba"   -> true
+ * - "abcd"  -> false
+ */
+
 function pa(s: string): boolean {
     // Percorre a metade da string para comparar os caracteres simétricos.
     for (let i = 0; i < s.length / 2; i++) {
@@ -21,14 +36,7 @@ const pA = (s: string): boolean => {
 }
 
 // Testes com diferentes entradas:
-console.log(pa("radar")); 
-console.log(pa("abcba")); 
-console.log(pa("hello")); 
-console.log(pa("aba"));   
-console.log(pa("abcd"));  
-
-console.log(pA("radar")); 
-console.log(pA("abcba")); 
-console.log(pA("hello")); 
-console.log(pA("aba"));   
-console.log(pA("abcd"));  
+console.log(pa("radar"));  // true
+console.log(pa("abcba"));  // true
+console.log(pa("hello"));  // false
+console.log(pa("aba"));    // true
